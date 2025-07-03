@@ -47,5 +47,18 @@ create table Appointments (
   Appointment_ID int(15),
   Appointment_Date_time datetime,
   Reason_for_visit text,
-  Appointment_Status ENUM('Scheduled', 'Completed', 'Canceled', 'No-Show')
+  Appointment_Status ENUM('Scheduled', 'Completed', 'Canceled', 'No-Show') DEFAULT 'Scheduled'
+);
+
+create table Department (
+ Department_ID int(20),
+ Department_name varchar(100),
+ Department_Office_Location varchar(100),
+);
+
+create table courses (
+ Course_ID int(20),
+ Course_Code char(10),
+ Course_Title varchar(15),
+ Course_Credits int(20);
 );
