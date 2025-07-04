@@ -16,7 +16,7 @@ create table publisher (
 create table book (
   Book_ID int(15),
   Book_Title varchar(50),
-  ISBN char(10);
+  ISBN char(10),
   Published date,
   Price decimal(10,2) NOT NULL
 );
@@ -53,12 +53,12 @@ create table Appointments (
 create table Department (
  Department_ID int(20),
  Department_name varchar(100),
- Department_Office_Location varchar(100),
+ Department_Office_Location varchar(100)
 );
 
 create table courses (
  Course_ID int(20),
  Course_Code char(10),
  Course_Title varchar(15),
- Course_Credits int(20);
+ Course_Credits int(20)
 );
